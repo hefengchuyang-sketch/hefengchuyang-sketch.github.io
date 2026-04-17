@@ -1,0 +1,140 @@
+﻿% !TeX encoding = UTF-8
+% !TeX program = xelatex
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external}
+\usepackage{linespacing_fix}
+\usepackage[Chinese]{languageSelection}
+\titlespacing*{\section}{0cm}{*0.65}{*0.45}
+\titlespacing*{\subsection}{0cm}{*0.45}{*0.2}
+
+\begin{document}
+\pagenumbering{gobble}
+\fontsize{10.2pt}{11.8pt}\selectfont
+
+\vspace{-10pt}
+\name{刘宇涵}
+
+\info{+86 18771182913~|~yuhanliu050128@gmail.com}{}{}{}
+\info{https://moyitech.github.io/}{}{}{}
+
+\section{教育经历}
+\datedsubsection{\textbf{\fontsize{11pt}{12pt}\selectfont 太原理工大学 ~ 人工智能学院 ~ 人工智能专业（本科）}}{2023.09--2027.06}
+\textbf{加权成绩：}76.02 / 100 \quad \textbf{参与组织：}太原理工大学 ~ 云顶书院，人工智能方向成员、奥创之家，项目负责人
+
+\vspace{1pt}
+\section{专业技能}
+\textbf{深度学习：}掌握经典深度学习算法，熟练使用 PyTorch 复现经典网络并训练模型。
+
+\textbf{LLM：}掌握主流量化算法应用（AWQ 等），具备模型本地部署（vllm、llama.cpp）、LoRA 微调与 RAG 开发能力。
+
+\textbf{区块链技术：}精通 Solidity 智能合约开发与 Web3 链上交互，具备区块链 + AI-Agent 协同系统的商业化落地经验。
+
+\textbf{TEE：}熟悉可信执行环境（TEE）原理与应用，了解 Intel SGX/ARM TrustZone 等主流技术架构，具备 TEE 与区块链/AI 结合的安全方案设计思路。
+
+\textbf{经验：}AI-Agent 智能体开发经验，主导智能选址大师商业化项目开发。
+
+\textbf{开源经历：}POUW-Chain 项目创始人，全程单人完成项目开发，使用 AI 辅助开发（正在申请 Thiel Fellowship 奖学金）。
+
+\vspace{1pt}
+\section{实习经历}
+\datedsubsection{\textbf{法雨科技（北京）~ Python 后端工程师}}{2024.09 -- 2024.10}
+\textbf{承担工作：}负责美国政府政策数据爬虫开发，使用 Scrapy + Selenium 爬取联邦公报、国会图书馆等权威平台的政策文本、提案信息与投票记录。
+
+\textbf{数据处理：}完成数据清洗与结构化入库，采用 PostgreSQL 存储，实现去重、时间戳标准化、关键词标签预标注等处理。
+
+\textbf{系统对接：}将结构化数据库对接至美国政策趋势预测 AI-Agent，通过 RESTful API 实现数据按需查询与增量推送。
+
+\textbf{接口交付：}开发并维护后端接口，基于 FastAPI 实现并配套 Swagger 文档，接口通过内部测试并稳定上线供智能体调用。
+
+\vspace{1pt}
+\section{科研经历}
+\datedsubsection{\textbf{Fluid Velocity Measurement using Laser-induced Plasma Tracking Velocimetry and Deep Learning（第六作者）}}{2024.05 -- 2025.12}
+\textbf{论文信息：}与中北大学仪器与电子学院联合发表于 SCI 二区期刊 Measurement（IF=5.0，工程技术领域 Top 期刊），2026 年第 259 卷，论文编号：119653。
+
+\textbf{承担工作：}学生第六作者，负责深度学习算法核心模块设计与实现，在 FVEN 网络基础上扩展算法适用边界，新增高温燃烧场、超音速流场等复杂工业工况适配。
+
+\textbf{性能结果：}完成算法性能优化与误差分析，将测速上限从 120m/s 提升至 180m/s，同时保持 MAE$\leq$3.5m/s 的高精度。
+
+\textbf{方法价值：}参与撰写论文算法部分，系统对比 PIV、LDV 等传统光学测速方法，论证本方法在非侵入式、实时性、低成本方面的显著优势。
+
+\vspace{\baselineskip}
+\noindent{\large \textbf{\parbox[t]{0.78\textwidth}{FVEN: Fluid Velocity Estimation Network Based on Laser-Induced Plasma Images（第一作者）}}\hfill 2024.06 -- 2025.12\par}
+\textbf{论文信息：}发表于 2025 Asian Conference on Artificial Intelligence Technology（ACAIT，EI 检索，中国科协重要学术会议），DOI: 979-8-3315-8787-1/25/\$31.00 (C)2025 IEEE。
+
+\textbf{核心创新：}独立提出三阶段流体速度估计网络 FVEN，解决传统激光诱导等离子体测速法受等离子体自演化干扰、精度不足的核心痛点。
+
+\textbf{关键模块：}设计局部-全局去噪模块，融合 SAM 分割模型与高斯/OTSU 多头滤波器，有效去除葵花籽状泵光噪声与全局背景干扰。
+
+\textbf{算法改进：}开发基于 MLP 的等离子体质心估计模块（CEM），相比传统边界框/加权质心法，质心定位平均误差降低 62\%。
+
+\textbf{机制创新：}首创多图像感知注意力模块（MIAAM），动态调整时序图像权重，从根源上抑制等离子体自膨胀/衰减带来的系统性误差。
+
+\textbf{实验结果：}构建包含 7200 张气流场、1440 张燃烧场图像的多场景测速基准数据集，基于 PyTorch 完成模型训练验证，实现气流场测速 MAE$\leq$3.17m/s，最大相对误差$\leq$4\%，精度显著优于现有方法。
+
+\textbf{工程落地：}完成算法工程化封装，发布开源测速软件与数据采集演示视频至 GitHub，获得航空航天与计算机视觉研究者广泛关注。
+
+\vspace{1pt}
+\vspace{0.8\baselineskip}
+\section{开源经历}
+\datedsubsection{\textbf{POUW-Chain 创始人 \& 独立开发者}}{2025.12 -- 2026.04}
+\textbf{GitHub:} https://github.com/hefengchuyang-sketch/POUW-Chain \quad \textbf{申请进展：}正在申请 Thiel Fellowship 奖学金
+
+\textbf{项目定位：}全球首个 S-Box 零浪费有用工作量证明异构计算区块链，将 AI 推理、科学计算、密码学原语生成转化为共识算力，打造算力可用、结果可验、结算可审计的去中心化可信算力市场。
+
+\textbf{承担工作：}全程单人独立完成全栈开发（AI 辅助），实现 60+ 核心模块，覆盖多硬件扇区架构、混合共识引擎、双代币经济、任务全生命周期管理，298 项自动化测试 100\% 通过。
+
+\textbf{核心机制：}首创 POUW + S-Box PoUW 混合共识机制，支持 4 种可配置共识模式，挖矿产出的密码学 S-Box 直接用于链上 P2P 加密。
+
+\textbf{架构设计：}设计多扇区异构算力架构，按 H100/RTX4090/CPU 等硬件类型独立挖矿与结算，避免算力垄断，保障中小硬件持有者公平参与。
+
+\textbf{安全与补偿：}构建三层安全与补偿体系：端到端加密传输、双见证交叉结算、自动仲裁与违约赔偿，实现上传超时自动撤单 + 国库补偿、预算锁定与超额退款。
+
+\textbf{工程化交付：}完成全链路工程化落地：支持 Docker 一键部署与 Windows 一键启动，配套完整技术文档体系与可复现验证清单，发布端到端 Demo 实现下单-执行-回传-结算闭环。
+
+\textbf{演进方向：}项目持续开源迭代，已完成 TEE 软件层可信闭环，面向可信算力市场 + AI-Agent 分布式协同长期方向演进。
+
+\vspace{2pt}
+\vspace{0.8\baselineskip}
+\section{项目经历}
+\datedsubsection{\textbf{大创项目：基于深度学习的激光诱导等离子体图像流体速度高精度反演算法研究}}{2025.10 -- 至今}
+\textbf{角色：}项目发起人、核心算法负责人
+
+\textbf{合作单位：}中北大学仪器与电子学院
+
+\textbf{项目背景：}项目针对传统激光诱导等离子体测速法受等离子体自演化干扰、精度不足的行业痛点，提出深度学习驱动的流体速度反演方案，为航空航天发动机燃烧场原位测速提供新一代技术支撑。
+
+\textbf{承担工作：}主导提出三阶段 FVEN 流体速度估计网络，独立设计局部-全局去噪模块、MLP 质心估计模块与多图像感知注意力模块，从根源上抑制等离子体自膨胀/衰减带来的系统性误差。
+
+\textbf{数据与结果：}负责构建包含 7200 张气流场、1440 张燃烧场图像的多场景测速基准数据集，基于 PyTorch 完成模型训练与验证，实现气流场测速 MAE$\leq$3.17m/s，最大相对误差 PMAE$\leq$4\%，精度显著优于传统边界框法、加权质心法等方法。
+
+\textbf{工况验证：}与中北大学联合完成高温燃烧场、超音速流场等复杂工业工况验证，将算法测速上限从 120m/s 拓展至 180m/s，同时保持 MAE$\leq$3.5m/s 的高精度。
+
+\textbf{工程化：}完成算法工程化封装，发布可直接调用的测速软件及数据采集演示视频并开源至 GitHub，形成标准化实验流程与参数手册。
+
+\textbf{产出成果：}基于本项目成果发表学术论文 2 篇：以第一作者发表 EI 会议论文 1 篇（ACAIT 2025），以第六作者发表 SCI 二区 Top 期刊论文 1 篇（Measurement 2026）；申请发明专利 1 项，登记计算机软件著作权 2 项。
+
+\vspace{\baselineskip}
+\datedsubsection{\textbf{竞赛项目：智能选址大师}}{2026.02}
+\textbf{角色：}队员、智能体开发负责人
+
+\textbf{赛事：}第五届梧桐杯全国大学生人工智能创新大赛 智能体赛道 全国一等奖
+
+\textbf{项目背景：}针对传统线下商铺选址依赖人工经验、数据维度单一、决策周期长且准确率低的行业痛点，构建多 Agent 协同的端到端智能商铺推荐系统，实现从商圈调研、竞品分析到客流预测、收益评估的全流程自动化决策。
+
+\textbf{架构设计：}主导设计 5 模块多 Agent 协作架构，负责数据采集 Agent、商圈分析 Agent、决策融合 Agent 的核心开发，基于 Qwen2.5-7B + vLLM 实现 Agent 工具调用与自主推理。
+
+\textbf{数据融合：}采用 Agentic-RAG 架构整合地理空间数据、工商数据、人流热力数据等多源异构信息，结合 Function Call 实现动态数据查询与实时分析。
+
+\textbf{可信存证：}设计区块链存证模块，将多 Agent 决策日志、模型推理结果上链，确保选址过程可追溯、可审计，解决多方协作信任问题。
+
+\textbf{业务结果：}优化 Agent 任务调度与结果融合策略，将单店选址决策周期从 7 天缩短至 2 小时，Top3 推荐准确率达 89\%，覆盖全国 30+ 核心城市、2000+ 商圈。
+
+\textbf{商业化：}项目计划商业化落地，服务多家线下零售品牌。
+
+\vspace{1pt}
+\section{竞赛获奖}
+\datedsubsection{第二十七届中国机器人及人工智能大赛 ~ 三等奖}{2025}
+\vspace{0.5pt}
+\datedsubsection{第五届“梧桐杯”全国大学生人工智能创新大赛智能体赛道 ~ 全国一等奖}{2026}
+
+\end{document}
