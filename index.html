@@ -1,155 +1,241 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yuhan Liu.io</title>
+    <meta
+      name="description"
+      content="Yuhan Liu, undergraduate researcher in trustworthy distributed AI systems, agentic AI, and verifiable AI computation."
+    />
+    <title>Yuhan Liu | Trustworthy Distributed AI Systems</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="site-shell">
-      <aside class="sidebar">
-        <img class="avatar" src="images/you.jpg?v=2680435" alt="刘宇涵" />
-        <h1>刘宇涵</h1>
-        <p class="tagline">AI / LLM / 区块链 / Agent</p>
+    <header class="topbar">
+      <a class="brand" href="#home">Yuhan Liu</a>
+      <nav class="topnav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#interests">Research Interests</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#vision">Vision</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-        <ul class="profile-list">
-          <li>📍 山西</li>
-          <li>📧 yuhanliu050128@gmail.com</li>
-          <li>📱 +86 18771182913</li>
-          <li>🌐 <a href="https://hefengchuyang-sketch.github.io/" target="_blank" rel="noreferrer">个人主页</a></li>
-        </ul>
-
-        <nav class="quick-nav">
-          <a href="#about">About</a>
-          <a href="#education">Education</a>
-          <a href="#skills">Skills</a>
-          <a href="#internship">InternShip</a>
-          <a href="#research">Research</a>
-          <a href="#projects">Projects</a>
-          <a href="#opensource">OpenSource</a>
-          <a href="#awards">Awards</a>
-        </nav>
-      </aside>
-
-      <main class="content">
-        <section id="about">
-          <h2>About me</h2>
-          <p>
-            你好，我是刘宇涵，太原理工大学人工智能专业本科在读（2023.09 - 2027.06）。
-            关注深度学习、LLM、AI Agent 与区块链系统工程，具备从算法研究到工程化落地的实战经验。
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Undergraduate Researcher</p>
+          <h1>Trustworthy Distributed AI Systems</h1>
+          <p class="lead">
+            I work at the intersection of agentic AI, distributed systems, and
+            verifiable computation, with a long-term interest in building AI
+            infrastructure that can coordinate large-scale scientific and
+            industrial tasks.
           </p>
-          <p>
-            目前参与科研与开源项目，持续推进 AI + 区块链 + 可信执行环境（TEE）融合方向，
-            同时主导过竞赛级智能体系统与商业化原型开发。
-          </p>
-        </section>
-
-        <section id="education">
-          <h2>Education</h2>
-          <article>
-            <h3>太原理工大学 · 人工智能学院 · 人工智能专业（本科）</h3>
-            <p class="meta">2023.09 - 2027.06</p>
-            <p>加权成绩：76.02 / 100；参与云顶书院（人工智能方向）与奥创之家（项目负责人）。</p>
-          </article>
-        </section>
-
-        <section id="skills">
-          <h2>Professional Skills</h2>
+          <div class="hero-actions" aria-label="Profile links">
+            <a class="button primary" href="#publications">View Publications</a>
+            <a class="button" href="Liu%20Yuhan-Portfolio.pdf" target="_blank" rel="noreferrer">CV</a>
+            <a class="button" href="https://github.com/hefengchuyang-sketch" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+        <aside class="profile-card" aria-label="Profile summary">
+          <img class="avatar" src="images/you.jpg?v=2680435" alt="Portrait of Yuhan Liu" />
+          <h2>Yuhan Liu</h2>
+          <p>B.Eng. in Artificial Intelligence, Taiyuan University of Technology</p>
           <ul>
-            <li>深度学习：熟练使用 PyTorch 复现与训练经典网络。</li>
-            <li>LLM：掌握 AWQ、vLLM、llama.cpp、LoRA 微调与 RAG 开发。</li>
-            <li>区块链：精通 Solidity 与 Web3 链上交互，具备 AI-Agent 协同落地经验。</li>
-            <li>TEE：熟悉 Intel SGX/ARM TrustZone 及安全架构设计思路。</li>
+            <li>Expected graduation: June 2027</li>
+            <li>Based in China; open to PhD and RA opportunities</li>
+            <li><a href="mailto:yuhanliu050128@gmail.com">yuhanliu050128@gmail.com</a></li>
           </ul>
-        </section>
+        </aside>
+      </section>
 
-        <section id="internship">
-          <h2>InternShip</h2>
+      <section id="about" class="section-grid">
+        <div>
+          <p class="section-label">About</p>
+          <h2>Research-Oriented Profile</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            I am an undergraduate researcher at the School of Artificial
+            Intelligence, Taiyuan University of Technology. My research
+            interests lie at the intersection of agentic AI, distributed AI
+            systems, and trustworthy computing.
+          </p>
+          <p>
+            I am currently exploring how decentralized infrastructure can
+            support scalable and verifiable AI collaboration. My work connects
+            scientific AI for fluid measurement, multi-agent decision systems,
+            and proof-of-useful-work infrastructure for trustworthy AI
+            computation.
+          </p>
+        </div>
+      </section>
+
+      <section id="interests" class="section-grid">
+        <div>
+          <p class="section-label">Research Interests</p>
+          <h2>Core Directions</h2>
+        </div>
+        <div class="interest-grid">
           <article>
-            <h3>法雨科技（北京）· Python 后端工程师</h3>
-            <p class="meta">2024.09 - 2024.10</p>
+            <h3>Agentic AI</h3>
+            <p>Multi-agent collaboration, tool use, RAG, and decision-making workflows.</p>
+          </article>
+          <article>
+            <h3>Distributed AI Systems</h3>
+            <p>Compute markets, heterogeneous infrastructure, and scalable AI coordination.</p>
+          </article>
+          <article>
+            <h3>Verifiable AI Computation</h3>
+            <p>Useful-work consensus, trusted execution, auditability, and settlement.</p>
+          </article>
+          <article>
+            <h3>Scientific AI</h3>
+            <p>Deep learning for optical velocimetry, plasma tracking, and industrial measurement.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications" class="section-grid">
+        <div>
+          <p class="section-label">Publications</p>
+          <h2>Selected Papers</h2>
+        </div>
+        <div class="publication-list">
+          <article class="publication">
+            <p class="year">2026</p>
+            <h3>FVEN: Fluid Velocity Estimation Network Based on Laser-Induced Plasma Images</h3>
+            <p class="venue">Asian Conference on Artificial Intelligence Technology, ACAIT 2025. EI indexed.</p>
+            <p><strong>Role:</strong> First Author</p>
+            <p>
+              Proposed a three-stage FVEN architecture for laser-induced plasma
+              velocimetry, including local-global denoising, centroid estimation,
+              and multi-image aware attention.
+            </p>
+          </article>
+
+          <article class="publication">
+            <p class="year">2026</p>
+            <h3>Fluid Velocity Measurement using Laser-induced Plasma Tracking Velocimetry and Deep Learning</h3>
+            <p class="venue"><em>Measurement</em>, Vol. 259, Article 119653. SCI Q2.</p>
+            <p><strong>Role:</strong> Sixth Author</p>
+            <p>
+              Contributed deep learning modules and error analysis for complex
+              industrial conditions, extending the measurable velocity ceiling
+              from 120 m/s to 180 m/s while maintaining high precision.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section-grid">
+        <div>
+          <p class="section-label">Projects</p>
+          <h2>Research Systems</h2>
+        </div>
+        <div class="project-list">
+          <article class="project">
+            <div class="project-heading">
+              <h3>POUW-Chain</h3>
+              <a href="https://github.com/hefengchuyang-sketch/POUW-Chain" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <p class="question">Research Problem: How can AI computation be verified in decentralized environments?</p>
+            <p>
+              POUW-Chain is a proof-of-useful-work blockchain system for
+              decentralized, verifiable, and auditable AI computation.
+            </p>
             <ul>
-              <li>基于 Scrapy + Selenium 开发美国政策数据爬虫，覆盖联邦公报等权威来源。</li>
-              <li>完成 PostgreSQL 结构化入库、去重、时间戳标准化与标签预处理。</li>
-              <li>通过 FastAPI + RESTful API 对接政策趋势预测 AI-Agent，并稳定上线。</li>
+              <li>Designed a hybrid POUW + S-Box PoUW consensus mechanism.</li>
+              <li>Built heterogeneous compute sectors for H100, RTX4090, and CPU workers.</li>
+              <li>Implemented task lifecycle management, dual settlement, arbitration, and compensation.</li>
+              <li>Completed 60+ core modules and 298 automated tests.</li>
             </ul>
           </article>
-        </section>
 
-        <section id="research">
-          <h2>Research</h2>
-          <article>
-            <h3>Fluid Velocity Measurement...（第六作者）</h3>
-            <p class="meta">2024.05 - 2025.12</p>
+          <article class="project">
+            <h3>FVEN Scientific AI Project</h3>
+            <p class="question">Research Problem: How can deep learning improve plasma-based fluid velocity measurement?</p>
             <p>
-              与中北大学联合发表于 SCI 二区期刊 Measurement（IF=5.0），
-              负责算法模块设计与工业复杂工况适配，测速上限从 120m/s 提升至 180m/s。
+              Developed a deep-learning-driven velocity inversion pipeline for
+              laser-induced plasma images in airflow, high-temperature
+              combustion, and supersonic flow scenarios.
             </p>
-          </article>
-          <article>
-            <h3>FVEN: Fluid Velocity Estimation Network...（第一作者）</h3>
-            <p class="meta">2024.06 - 2025.12</p>
-            <p>
-              发表 ACAIT 2025（EI），提出三阶段 FVEN 网络；构建多场景数据集，
-              实现气流场测速 MAE ≤ 3.17m/s，最大相对误差 ≤ 4%。
-            </p>
-          </article>
-        </section>
-
-        <section id="projects">
-          <h2>Projects</h2>
-          <article>
-            <h3>大创项目：基于深度学习的激光诱导等离子体图像流体速度高精度反演</h3>
-            <p class="meta">2025.10 - 至今</p>
-            <p>项目发起人、核心算法负责人；产出 EI 论文、SCI 论文、专利与软著。</p>
-          </article>
-          <article>
-            <h3>竞赛项目：智能选址大师</h3>
-            <p class="meta">2026.02</p>
-            <p>
-              负责智能体开发，构建多 Agent 协作选址系统，单店决策周期由 7 天缩短至 2 小时，
-              Top3 推荐准确率达 89%。
-            </p>
-          </article>
-        </section>
-
-        <section id="opensource">
-          <h2>OpenSource Contribution</h2>
-          <article>
-            <h3>POUW-Chain（创始人 & 独立开发者）</h3>
-            <p class="meta">2025.12 - 2026.04</p>
-            <p>
-              单人完成 60+ 核心模块开发与 298 项自动化测试；设计 POUW + S-Box PoUW 混合共识，
-              支持异构算力协同与可信结算闭环。
-            </p>
-            <p>
-              GitHub: <a href="https://github.com/hefengchuyang-sketch/POUW-Chain" target="_blank" rel="noreferrer">hefengchuyang-sketch/POUW-Chain</a>
-            </p>
+            <ul>
+              <li>Built a benchmark with 7,200 airflow images and 1,440 combustion images.</li>
+              <li>Achieved airflow MAE <= 3.17 m/s and max relative PMAE <= 4%.</li>
+              <li>Produced one EI-indexed first-author paper and one SCI Q2 co-authored paper.</li>
+            </ul>
           </article>
 
-          <h3>Additional Links</h3>
-          <ul>
-            <li><a href="https://hefengchuyang-sketch.github.io/" target="_blank" rel="noreferrer">Home Page</a></li>
-            <li><a href="刘宇涵-简历.pdf" target="_blank" rel="noreferrer">CV（刘宇涵-简历.pdf）</a></li>
-            <li><a href="https://github.com/hefengchuyang-sketch/POUW-Chain" target="_blank" rel="noreferrer">GitHub</a></li>
-          </ul>
-        </section>
+          <article class="project">
+            <h3>Intelligent Site Selection Master</h3>
+            <p class="question">Research Problem: How can multi-agent systems support auditable business decisions?</p>
+            <p>
+              Led core agent development for a multi-agent retail location
+              recommendation system using Qwen2.5-7B, vLLM, Agentic-RAG, and
+              blockchain-based evidence anchoring.
+            </p>
+            <ul>
+              <li>Shortened per-store decision cycles from 7 days to 2 hours.</li>
+              <li>Reached 89% Top-3 recommendation accuracy across 30+ cities.</li>
+              <li>Won National First Prize in the Agent Track of the 5th Wutong Cup.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-        <section id="awards">
-          <h2>Competitions & Awards</h2>
-          <ul>
-            <li>第二十七届中国机器人及人工智能大赛 · 三等奖（2025）</li>
-            <li>第五届“梧桐杯”全国大学生人工智能创新大赛智能体赛道 · 全国一等奖（2026）</li>
-          </ul>
-        </section>
-      </main>
-    </div>
+      <section id="vision" class="section-grid">
+        <div>
+          <p class="section-label">Research Vision</p>
+          <h2>Long-Term Direction</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            I am interested in building trustworthy distributed AI systems that
+            can coordinate computation, evidence, and incentives across many
+            independent participants.
+          </p>
+          <p>
+            In the future, I hope to explore scalable AI coordination,
+            verifiable computation, trusted execution, and AI marketplaces where
+            useful scientific and industrial workloads can become auditable
+            infrastructure.
+          </p>
+        </div>
+      </section>
+
+      <section id="awards" class="section-grid">
+        <div>
+          <p class="section-label">Awards</p>
+          <h2>Selected Honors</h2>
+        </div>
+        <ul class="award-list">
+          <li>National First Prize, Agent Track, 5th Wutong Cup National College AI Innovation Competition, 2026.</li>
+          <li>Third Prize, 27th China Robot and Artificial Intelligence Competition, 2025.</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section-grid contact-section">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2>PhD / RA Opportunities</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:yuhanliu050128@gmail.com">yuhanliu050128@gmail.com</a>
+          <a href="tel:+8618771182913">+86 18771182913</a>
+          <a href="Liu%20Yuhan-Portfolio.pdf" target="_blank" rel="noreferrer">Curriculum Vitae</a>
+          <a href="https://github.com/hefengchuyang-sketch" target="_blank" rel="noreferrer">GitHub Profile</a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
