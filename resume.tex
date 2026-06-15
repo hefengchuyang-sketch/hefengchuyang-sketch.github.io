@@ -18,22 +18,10 @@
 \info{https://hefengchuyang-sketch.github.io/}{}{}{}
 
 \vspace{2pt}
-\centerline{\small Undergraduate Researcher in Trustworthy Distributed AI Systems}
+\centerline{\small Research Interests: Agentic AI | Distributed AI Systems | Trustworthy Computing}
 
 \section{Research Interests}
 Agentic AI, Distributed AI Systems, Trustworthy Computing, Decentralized AI Infrastructure, Multi-Agent Systems
-
-\section{Education}
-\datedsubsection{\textbf{\fontsize{11pt}{12pt}\selectfont Taiyuan University of Technology ~ School of Artificial Intelligence ~ B.Eng. in Artificial Intelligence}}{2023.09--2027.06}
-\textbf{Organizations:} Yunding Academy (AI Track Member), Mihrilab (Project Lead)
-
-\vspace{2pt}
-\textbf{Weighted GPA:} 76.02 / 100
-
-\section{Research Summary}
-My research focuses on trustworthy distributed AI systems, with current work spanning scientific AI, multi-agent systems, decentralized AI infrastructure, and trusted execution mechanisms.
-
-I am particularly interested in scalable AI collaboration, verifiable computation, and trustworthy AI marketplaces.
 
 \vspace{1pt}
 \section{Publications}
@@ -44,9 +32,17 @@ Asian Conference on Artificial Intelligence Technology (ACAIT, EI Indexed)
 
 \vspace{3pt}
 \datedsubsection{\textbf{Fluid Velocity Measurement using Laser-induced Plasma Tracking Velocimetry and Deep Learning}}{2026}
-Sixth Author
+Co-Author
 
 Measurement (SCI Q2, IF=5.0)
+
+\section{Education}
+\datedsubsection{\textbf{Taiyuan University of Technology}}{2023.09--2027.06}
+B.Eng. in Artificial Intelligence
+
+Yunding Academy (AI Track Member)
+
+Mihrilab (Project Lead)
 
 \vspace{1pt}
 \section{Honors and Awards}
@@ -56,46 +52,39 @@ Measurement (SCI Q2, IF=5.0)
 
 \vspace{1pt}
 \section{Research Experience}
-\datedsubsection{\textbf{Fluid Velocity Measurement using Laser-induced Plasma Tracking Velocimetry and Deep Learning (Sixth Author)}}{2024.05 -- 2025.12}
-\textbf{Contribution:} Sixth author; designed and implemented core deep learning modules, extending FVEN applicability to complex industrial conditions such as high-temperature combustion and supersonic flow fields.
+\noindent{\large \textbf{\parbox[t]{0.78\textwidth}{FVEN: Fluid Velocity Estimation Network Based on Laser-Induced Plasma Images (First Author)}}\hfill 2024.06 -- 2025.12\par}
+\textbf{Contributions}
 
-\textbf{Performance:} Optimized model performance and conducted error analysis, increasing the measurable velocity ceiling from 120 m/s to 180 m/s while maintaining high precision (MAE $\leq$ 3.5 m/s).
-
-\textbf{Method Value:} Contributed to the algorithm section of the paper; systematically compared the method against traditional optical velocimetry approaches (PIV, LDV), demonstrating clear advantages in non-invasiveness, real-time capability, and cost.
+\begin{itemize}
+\item Proposed a three-stage FVEN framework.
+\item Designed CEM and MIAAM modules.
+\item Built datasets containing 7,200 airflow and 1,440 combustion images.
+\item Achieved MAE $\leq$ 3.17 m/s and relative error $\leq$ 4\%.
+\item Published as first author in ACAIT (EI).
+\end{itemize}
 
 \vspace{\baselineskip}
-\noindent{\large \textbf{\parbox[t]{0.78\textwidth}{FVEN: Fluid Velocity Estimation Network Based on Laser-Induced Plasma Images (First Author)}}\hfill 2024.06 -- 2025.12\par}
-\textbf{Core Innovation:} Proposed the three-stage FVEN architecture to address key limitations of traditional laser-induced plasma velocimetry, especially self-evolution interference and insufficient precision.
+\datedsubsection{\textbf{Fluid Velocity Measurement using Laser-induced Plasma Tracking Velocimetry and Deep Learning (Co-Author)}}{2024.05 -- 2025.12}
+\textbf{Contribution:} Designed and implemented deep learning modules for complex industrial conditions, including high-temperature combustion and supersonic flow fields.
 
-\textbf{Key Modules:} Designed a local-global denoising module integrating SAM segmentation with Gaussian/OTSU multi-head filters to suppress pump-light noise patterns and global background interference.
-
-\textbf{Algorithm Improvement:} Developed an MLP-based plasma centroid estimation module (CEM), reducing average centroid localization error by 62\% compared with bounding-box and weighted-centroid baselines.
-
-\textbf{Mechanism Innovation:} Introduced a Multi-Image Aware Attention Module (MIAAM) to dynamically weight temporal images and suppress systematic errors caused by plasma self-expansion and attenuation.
-
-\textbf{Experimental Results:} Built a multi-scenario benchmark with 7,200 airflow images and 1,440 combustion images; completed PyTorch training/validation and achieved MAE $\leq$ 3.17 m/s with max relative error $\leq$ 4\%, significantly outperforming existing methods.
-
-\textbf{Engineering Delivery:} Packaged the algorithm for practical use and open-sourced the velocimetry software plus data acquisition demo on GitHub, attracting broad interest from aerospace and computer vision researchers.
+\textbf{Result:} Extended the measurable velocity ceiling from 120 m/s to 180 m/s while maintaining MAE $\leq$ 3.5 m/s.
 
 \vspace{1pt}
 \vspace{0.8\baselineskip}
-\section{Open-Source Experience}
-\datedsubsection{\textbf{POUW-Chain Founder \& Independent Developer}}{2025.12 -- 2026.04}
+\section{Open-Source Project}
+\datedsubsection{\textbf{POUW-Chain: Decentralized AI Computation Platform}}{2025.12 -- 2026.04}
 \textbf{GitHub:} https://github.com/hefengchuyang-sketch/POUW-Chain
 
 \textbf{Positioning:} Designed and implemented a decentralized AI computation platform for trustworthy execution, resource scheduling, and verifiable settlement.
 
-\textbf{Work Scope:} Completed full-stack solo development (AI-assisted), delivering 60+ core modules across multi-hardware sectors, a hybrid consensus engine, dual-tokenomics, and full task lifecycle management; all 298 automated tests passed.
+\textbf{Key Contributions}
 
-\textbf{Consensus Design:} Introduced a hybrid POUW + S-Box PoUW mechanism with four configurable modes; mined cryptographic S-Boxes are directly reused for on-chain P2P encryption.
-
-\textbf{Architecture:} Designed a multi-sector heterogeneous compute architecture enabling independent mining and settlement by hardware type (H100/RTX4090/CPU), reducing monopolization and improving fairness for small/medium hardware owners.
-
-\textbf{Security and Compensation:} Built a three-layer security/compensation system with end-to-end encrypted transport, dual-witness cross settlement, automated arbitration, breach compensation, timeout-triggered cancellation plus treasury compensation, budget locking, and overage refunds.
-
-\textbf{Engineering Delivery:} Implemented end-to-end engineering with one-click Docker deployment and Windows startup, complete technical documentation and reproducibility checklists, and an end-to-end demo covering order, execution, callback, and settlement.
-
-\textbf{Roadmap:} The project is under continuous open-source iteration; a trusted software-layer TEE loop has been completed, with long-term direction toward a trusted compute market and distributed AI-agent collaboration.
+\begin{itemize}
+\item Designed useful-work consensus mechanisms.
+\item Built heterogeneous compute scheduling.
+\item Developed verifiable execution and settlement protocols.
+\item Explored decentralized infrastructures for AI workloads.
+\end{itemize}
 
 \vspace{2pt}
 \vspace{0.8\baselineskip}
@@ -105,26 +94,20 @@ Measurement (SCI Q2, IF=5.0)
 
 \textbf{Award:} National First Prize, Agent Track, 5th Wutong Cup National College AI Innovation Competition
 
-\textbf{Background:} Addressed manual, low-accuracy, and long-cycle decision processes in offline retail location selection by building an end-to-end multi-agent recommendation system covering district research, competitor analysis, footfall forecasting, and revenue evaluation.
+\textbf{Research Contributions}
 
-\textbf{Architecture:} Led a five-module multi-agent collaboration architecture and core development of the data collection, district analysis, and decision-fusion agents; enabled tool use and autonomous reasoning with Qwen2.5-7B + vLLM.
-
-\textbf{Data Fusion:} Used an Agentic-RAG framework to integrate heterogeneous sources including geospatial, business registration, and mobility heatmap data; combined with function calling for dynamic query and real-time analysis.
-
-\textbf{Trust and Auditability:} Designed a blockchain evidence module to anchor multi-agent decision logs and inference outputs on-chain, ensuring traceability and auditability for multi-party trust.
-
-\textbf{Business Results:} Optimized agent scheduling and result fusion, shortening per-store decision cycles from 7 days to 2 hours; achieved 89\% Top-3 recommendation accuracy across 30+ core cities and 2,000+ business districts.
-
-\textbf{Commercialization:} Planned for commercial deployment to serve multiple offline retail brands.
+\begin{itemize}
+\item Designed a five-agent collaborative architecture.
+\item Developed Agentic-RAG pipelines.
+\item Integrated geospatial and mobility datasets.
+\item Achieved 89\% Top-3 recommendation accuracy.
+\end{itemize}
 
 \vspace{1pt}
-\section{Selected Skills}
-\textbf{Programming:} Python, Solidity, SQL
+\section{Skills}
+Python, Solidity, PyTorch, FastAPI
 
-\textbf{Frameworks:} PyTorch, FastAPI, vLLM
+Agentic AI, Multi-Agent Systems
 
-\textbf{Systems:} Distributed Systems, Blockchain, Trusted Execution Environments (TEE)
-
-\textbf{AI Areas:} Agentic AI, Multi-Agent Systems, LLM Deployment, RAG
-
+Distributed Systems, Blockchain, TEE
 \end{document}
