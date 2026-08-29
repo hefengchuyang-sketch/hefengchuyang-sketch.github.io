@@ -19,6 +19,14 @@ body {
   font-family: "Microsoft YaHei", Arial, sans-serif;
   line-height: 1.65;
 }
+.motion-ready .hero > div,
+.motion-ready .hero > aside { animation: hero-in .8s cubic-bezier(.22,.8,.24,1) both; }
+.motion-ready .hero > aside { animation-delay: .14s; }
+.motion-ready .reveal-on-scroll { opacity:0; transform:translateY(24px); transition:opacity .65s ease-out, transform .65s cubic-bezier(.22,.8,.24,1); }
+.motion-ready .reveal-on-scroll.is-visible { opacity:1; transform:none; }
+.featured-work:hover .system-map { transform:translateY(-3px); box-shadow:0 14px 28px rgba(30,41,45,.08); }
+.system-map { transition:transform .25s ease-out, box-shadow .25s ease-out; }
+@keyframes hero-in { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:none; } }
 a {
   color: inherit;
   text-decoration: none;
@@ -257,6 +265,10 @@ footer {
   letter-spacing: 0.1em;
   color: var(--muted);
   border-top: 1px solid var(--line);
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior:auto !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
+  .motion-ready .reveal-on-scroll { opacity:1; transform:none; }
 }
 @media (max-width: 700px) {
   header {
