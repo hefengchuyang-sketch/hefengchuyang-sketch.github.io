@@ -160,7 +160,10 @@ main {
 .featured-copy p { max-width:670px; color:#536164; margin:15px 0 18px; }
 .chips { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px; }
 .chips span { border:1px solid var(--line); padding:4px 9px; font-size:10px; color:var(--muted); }
-.system-map { align-self:center; display:flex; align-items:center; justify-content:center; gap:10px; min-height:150px; background:#edf3f0; border:1px solid #d5e1dd; color:var(--ink); font-size:12px; }
+.project-evidence { align-self:center; overflow:hidden; border:1px solid #d5e1dd; background:#edf3f0; }
+.project-evidence img { display:block; width:100%; height:220px; object-fit:cover; object-position:center; transition:transform .35s ease-out; }
+.featured-work:hover .project-evidence img { transform:scale(1.025); }
+.mini-evidence { display:block; width:100%; height:74px; object-fit:cover; margin-top:18px; border:1px solid var(--line); }
 .system-map span { padding:12px 10px; background:#fff; border:1px solid var(--line); }
 .system-map i { font-style:normal; color:var(--accent); font-size:18px; }
 .supporting-work { display:grid; grid-template-columns:1fr 1fr; gap:36px; }
@@ -217,6 +220,9 @@ main {
 }
 .research-lead { grid-row:span 2; }
 .research-grid { grid-template-columns:1.35fr 1fr 1fr; align-items:start; }
+.research-pipeline,.paper-preview { display:block; width:100%; object-fit:cover; border:1px solid var(--line); margin-top:14px; }
+.research-pipeline { height:150px; }
+.paper-preview { height:86px; object-position:top; }
 .grid h3 {
   font-size: 18px;
   margin: 0 0 8px;
@@ -318,8 +324,9 @@ footer {
   }
   .featured-work { display:block; padding-top:24px; }
   .featured-copy h3 { font-size:28px; }
-  .system-map { margin-top:28px; min-height:116px; gap:5px; }
-  .system-map span { padding:9px 6px; font-size:10px; }
+  .project-evidence { margin-top:28px; }
+  .project-evidence img { height:145px; }
+  .research-pipeline { height:auto; max-height:170px; }
   .supporting-work { display:block; }
   .supporting-work article { padding:24px 0; }
   .cards article {
